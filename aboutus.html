@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>About</title>
+    <style media="screen">
+    .jumbotron{
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin-top: 0px;
+      margin-bottom: -100px;
+      background: linear-gradient(to bottom, rgba(2, 12, 47, 0.5) 0%, rgba(22, 24, 25, 0.5) 100%),url("{% static "images/aboutsec.avif" %}");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+      font: 1em sans-serif;
+      color: white;
+      font-size: large;
+    }
+
+    .alert alert-success{
+      background-color: rgb(5, 80, 80);
+    }
+    .jumbotron h1{
+      text-align: center;
+      font-size: 200;
+    }
+
+    
+    .alert{
+      margin: 0px;
+    }
+    .container .card{
+     margin-left: 50px;
+     margin-bottom: 20px;
+    }
+    .container{
+      background-color: rgb(11, 11, 11);
+    }
+   
+
+    .f{
+
+    flex-direction: column;
+    
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,  rgba(1, 10, 47, 0.5) 0%, rgba(28, 33, 34, 0.5) 100%),url("{% static "images/aboutsec.avif" %}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font: 1em sans-serif;
+    color: white;
+    font-size: large;
+  }
+    .g1{
+    color: #000;
+    padding: 20px 50px;
+    text-align: center;
+    word-wrap: break-word;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: small;
+  }
+  .f h1{
+    color: rgb(226, 219, 7);
+  }
+  
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: ;
+    background: linear-gradient(to bottom, rgba(2, 12, 47, 0.5) 0%, rgba(22, 24, 25, 0.5) 100%),url("{% static "images/aboutsec.avif" %}");
+}
+
+.userCard {
+    position: relative;
+    height: 65vh;
+    padding: 30px 10px;
+    margin-left: 9.9%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 300px);
+    row-gap: 20px;
+}
+
+.card {
+    background-color: rgb(212, 134, 8);
+    transition: all 0.3s;
+    height: 350px;
+    border-radius: 10px;
+   
+    border: 1px solid skyblue;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    color: #fff;
+    cursor: pointer;
+}
+
+.moving {
+    opacity: 0.4;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 3rem;
+    display: inline-flex;
+    transform: translateX(100px);
+    position: relative;
+    transition: all 0.7s;
+}
+
+.moving i {
+    font-size: 3rem;
+    margin-right: 15px;
+    display: none;
+}
+
+.card:hover {
+    background-color: rgb(227, 209, 6);
+    transform: translateY(-6px);
+}
+
+.card:hover .moving,
+.card:hover .moving i {
+    transform: translateX(0px) rotate(360deg);
+    opacity: 1;
+    display: flex;
+}
+
+.card:hover .instagram,
+.insta {
+    color: rgb(9, 9, 9);
+}
+
+.card:hover .youtube,
+.yt {
+    color: #0c0c0c;
+}
+
+.card:hover .twitter,
+.tw {
+    color: #0d0d0e;
+}
+
+.card:hover .facebook,
+.fb {
+    color: #0d0d0e;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-weight: 80;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+    <title></title>
+  </head>
+  <body>
+
+    {% include "library/navbar.html" %}
+<br><br>
+<center><h3 class = 'alert alert-success'>About Us !</h3></center>
+    <div class="jumbotron">
+  <h4 class="display-4"><b>Hello, Dear NSTI(W)Kolkata ADIT Students!<br> Welcome to Our Nsti Library Management System</b></h4><br>
+  <p class="lead"><b>A service dedicated to Admin and Student. We provide online resources, professional support
+    and guidance <br> all our Nsti students whenever, and from wherever they have chosen to study.</b></p>
+  <hr class="my-4">
+  <!-- <p>Explore our Website.</p> -->
+  <!-- <p class="lead"> -->
+    <!-- <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a> -->
+  </p><br><br> 
+</div>
+
+   
+
+<!--div class="f">
+  <h1><b>Meet Our Team</b></h1>
+  <p>"In the world of knowledge and exploration, 'Meat Our Team' is like a library's secret ingredient, adding a unique flavor to every literary project."
+
+    "Just as a library brings together a diverse collection of books, our team at 'Meat Our Team' brings together diverse talents to enhance the reading experience." Feel free to use these lines to highlight how "Meat Our Team" can contribute to and enhance your library project's success.</p-->
+
+
+
+
+    <!--head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Responsive Cards </title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" /-->
+      <link rel="stylesheet" href="style.css">
+
+  
+
+      <div class="userCard">
+          <div class="card">
+              <h2 class="moving instagram"> <img src="{% static "images/Aashika.jpeg" %}" width="300px" height="200px" border="4">
+                
+              </h2>
+              <h2 class="insta"> Aashika Raj </h2>
+             
+              <p> Project Leader</p>
+          </div>
+          <div class="card">
+              <h2 class="moving twitter">
+                <img src="{% static "images/susma.jpeg" %}" width="300px" height="200px" border="4"> 
+               
+              </h2>
+              <h2 class="tw">Susma Ki Singh</h2>
+              <p> Developers</p>
+          </div>
+          <div class="card">
+              <h2 class="moving youtube">
+                <img src="{% static "images/Archana.jpg" %}" width="300px" height="200px" border="4">
+                  
+              </h2>
+              <h2 class="yt"> Archana Kumari </h2>
+              <p> Content Creat</p>
+          </div>
+          <!--div class="card">
+              <h2 class="moving facebook">
+                <img src="{% static "images/pick1.jpg" %}" width="300px" height="200px" border="4"></a>
+                  
+              </h2>
+              <h2 class="fb"> C Programming</h2>
+              <p> C is programming language </p-->
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--div class="g">
+    <div class="g1">
+    <h2><img src="{% static "images/archana.jpg" %}" alt="STUDENT" width="80px" height="80px"> Aashika  Raj</h2>
+    <p>We take care for each and every Trainees in<br> Owner</p>
+  </div>
+  <div class="g1">
+    <h2><img src="{% static "images/susma.jpeg" %}" alt="WATCH" width="80px" height="80px">Susma Ki Singh</h2>
+    <p>We have provide best placement with special<br> for Book  ideas</p>
+  </div>
+  <div class="g1">
+    <h2><img src="{% static "images/archana.jpg" %}" alt="SETTING" width="80px" height="80px">Archana Kumari</h2>
+    <p>Our special attention to the Weaker Section of<br>team of Placement Link </p>
+  </div>
+  </div><br-->
+
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+  </p><br><br>
+
+
+
+  {% include "library/footer.html" %}
+
+
+  </body>
+
+  
+</html>
